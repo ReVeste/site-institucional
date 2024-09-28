@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.navbar {
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+  display: flex;
+  margin: 0;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: rgba(0, 0, 0, 0.336);
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px); 
+  z-index: 1000; 
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white; 
+  font-weight: bold;
+}
+
+.hero {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('./assets/background.png');
+  background-position: center;
+  background-size: cover; 
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 50px;
+  overflow: hidden; 
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  color: white;
+  max-width: 100%;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  padding-top: 100px;
+}
+
+.hero-content img {
+  width: auto;
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 0px; 
+}
+
+.hero-content h1 {
+  font-size: 45px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  white-space: nowrap; 
+}
+
+.hero-content form {
+  display: flex;
+}
+
+.hero-content input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #000000;
+  border-radius: 10px 0 0 10px; 
+  font-weight: bold; 
+  font-size: 13px; 
+}
+
+.hero-content input::placeholder {
+  font-weight: bold; 
+}
+
+.hero-content input:focus {
+  outline: none; 
+  border: 1px solid #404447; 
+}
+
+.hero-content button {
+  padding: 10px; 
+  background-color: #0b1720;
+  color: white;
+  border: none;
+  border-radius: 0 10px 10px 0; 
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px; 
+  height: 42px;
+  width: 215px; 
+}
+
+.hero-content button:hover {
+  background-color: #1e2b40;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.carrossel {
+  width: 100%;
+  background-color: #0F1921; 
+  padding: 10px 0;
+  position: relative; 
+}
+
+.carrossel-image img {
+  width: 80%; 
+  height: auto; 
+  margin: 0 auto; 
+  display: block; 
+}
+
+.carrossel-item {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  padding: 20px;
+  color: white;
+  position: relative;
+  padding-left: 70px; 
+}
+
+.carrossel-text h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  padding-top: 60px;
+}
+
+.carrossel-text {
+  flex: 1; 
+  margin-right: 20px; 
+}
+
+.carrossel-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.carrossel-indicators {
+  display: flex;
+  justify-content: flex-start; 
+  position: relative; 
+  top: 80px; 
+  left: 70px; 
+  z-index: 2; 
+  margin: 0;
+  padding: 0; 
+}
+
+.indicator {
+  width: 20px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: white;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center; 
+  margin-top: 40px; 
+  gap: 80px; 
+}
+
+.icon-description {
+  margin-top: 2px; 
+}
+
+.icons-container .icon-description {
+  font-size: 14px;
+}
+
+.carrossel-icon {
+  width: 40px; 
+  height: 50px;
+  object-fit: contain; 
+  margin-right: 10px; 
+}
+
+.icon-text-pair {
+  display: flex;
+}
+
+.icon-text-pair span {
+  margin-top: 5px; 
+  font-size: 14px; 
+  color: white; 
+}
+
+.card-blue {
+  background-color: #0F1A22; 
+  color: white; 
+}
+
+.card-silver {
+  background-color: #E6E6E6; 
+  color: black; 
+}
+
+.valores {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.valores-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.valor-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 220px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.valor-card:hover {
+  transform: translateY(-15px);
+}
+
+.valores h2 {
+  font-size: 20px; 
+  font-family: 'Inter'; 
+  font-weight: 600; 
+  margin-bottom: 0px;
+  letter-spacing: 4px;
+}
+
+.valores h3 {
+  font-size: 40px; 
+  margin-bottom: 40px;
+  margin-top: 0;
+  font-family: 'Forum'; 
+  font-weight: 100; 
+  letter-spacing: 3px;
+}
+
+.valor-card h4 {
+  font-size: 20px; 
+  margin-bottom: 8px;
+  font-family: Forum;
+  font-weight: 350; 
+}
+
+.valor-card p {
+  font-size: 15px; 
+  line-height: 1.4; 
+  font-family: Inter;
+}
+
+.valor-icon {
+  padding-top: 15px;
+  width: 70px;
+  height: 80px;
+}
