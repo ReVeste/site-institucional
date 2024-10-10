@@ -1,0 +1,87 @@
+.hero {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../assets/background.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    color: white;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 100px;
+}
+
+.hero-content img {
+    width: auto;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    white-space: nowrap;
+}
+
+.hero-content form {
+    display: flex;
+}
+
+.hero-content input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #000000;
+    border-radius: 10px 0 0 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.hero-content input::placeholder {
+    font-weight: bold;
+}
+
+.hero-content input:focus {
+    outline: none;
+    border: 1px solid #404447;
+}
+
+.hero-content button {
+    padding: 10px;
+    background-color: #0b1720;
+    color: white;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    height: 42px;
+    width: 215px;
+}
+
+.hero-content button:hover {
+    background-color: #1e2b40;
+}

@@ -1,0 +1,62 @@
+.carrossel {
+    width: 100%;
+    background-color: #0F1921;
+    padding: 10px 0;
+    position: relative;
+}
+
+.carrossel-image img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.carrossel-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    position: relative;
+    padding-left: 70px;
+}
+
+.carrossel-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    padding-top: 60px;
+}
+
+.carrossel-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.carrossel-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.carrossel-indicators {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 80px;
+    left: 70px;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.indicator {
+    width: 20px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: white;
+}

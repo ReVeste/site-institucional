@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../App.css';  
-import reveste from '../assets/reveste.png';
+import './HeroSection.module.css';  
+import reveste from '../../assets/reveste.png';
 
 
 function HeroSection() {
@@ -27,6 +27,6 @@ function HeroSection() {
       </div>
     </section>
   );
-}
+};
 
 export default HeroSection;

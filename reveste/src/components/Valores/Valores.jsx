@@ -1,30 +1,30 @@
 import React from 'react';
-import '../App.css';
+import './Valores.module.css';
 
 const valoresData = [
   {
     id: 1,
     title: 'Empatia',
     description: 'Acreditamos que a empatia é a chave para entender as necessidades dos nossos clientes.',
-    icon: require('../assets/iconEmpatia.png')
+    icon: require('../../assets/iconEmpatia.png')
   },
   {
     id: 2,
     title: 'Inovação',
     description: 'Transformamos desafios em oportunidades, inovando para modernizar brechós.',
-    icon: require('../assets/iconInovacao.png')
+    icon: require('../../assets/iconInovacao.png')
   },
   {
     id: 3,
     title: 'Compromisso',
     description: 'Oferecemos mais que um sistema, somos parceiros no crescimento digital dos brechós.',
-    icon: require('../assets/iconCompromisso.png')
+    icon: require('../../assets/iconCompromisso.png')
   },
   {
     id: 4,
     title: 'Transparência',
     description: 'Acreditamos que a confiança mútua é a base para parceiros duradouros.',
-    icon: require('../assets/iconTransparencia.png')
+    icon: require('../../assets/iconTransparencia.png')
   }
 ];
 

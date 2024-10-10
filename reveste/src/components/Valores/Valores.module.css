@@ -1,0 +1,61 @@
+.valores {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.valores-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.valor-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 220px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.valor-card:hover {
+    transform: translateY(-15px);
+}
+
+.valores h2 {
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: 600;
+    margin-bottom: 0px;
+    letter-spacing: 4px;
+}
+
+.valores h3 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-family: 'Forum';
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+.valor-card h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-family: Forum;
+    font-weight: 350;
+}
+
+.valor-card p {
+    font-size: 15px;
+    line-height: 1.4;
+    font-family: Inter;
+}
+
+.valor-icon {
+    padding-top: 15px;
+    width: 70px;
+    height: 80px;
+}
