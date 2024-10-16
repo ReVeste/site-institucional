@@ -1,7 +1,6 @@
 import React from "react";
 
 
-import {useNavigate} from "react-router-dom"; 
 import Navbar from "../../components/Navbar/Navbar";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import Carrossel from "../../components/Carrossel/Carrossel";
