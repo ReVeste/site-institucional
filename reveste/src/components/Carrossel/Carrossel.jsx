@@ -1,20 +1,20 @@
 // ATUALIZADO
 import React, { useState, useEffect } from 'react';
-import '../App.css';
+import './Carrossel.module.css';
 
-import image1 from '../assets/tecnologias.png';
-import image2 from '../assets/colaboracao.png';
-import image3 from '../assets/desenvolvimento.png';
+import image1 from '../../assets/tecnologias.png';
+import image2 from '../../assets/colaboracao.png';
+import image3 from '../../assets/desenvolvimento.png';
 
-import icon1_1 from '../assets/iconeInovacao.png';
-import icon1_2 from '../assets/iconeQualidade.png';
-import icon1_3 from '../assets/iconeAgilidade.png';
+import icon1_1 from '../../assets/iconeInovacao.png';
+import icon1_2 from '../../assets/iconeQualidade.png';
+import icon1_3 from '../../assets/iconeAgilidade.png';
 
-import icon2_1 from '../assets/iconeParceria.png';
-import icon2_2 from '../assets/iconeEstrategia.png';
-import icon2_3 from '../assets/iconeFoco.png';
+import icon2_1 from '../../assets/iconeParceria.png';
+import icon2_2 from '../../assets/iconeEstrategia.png';
+import icon2_3 from '../../assets/iconeFoco.png';
 
-import icon3_1 from '../assets/iconeSuporte.png';
+import icon3_1 from '../../assets/iconeSuporte.png';
 
 const carrosselData = [
   {

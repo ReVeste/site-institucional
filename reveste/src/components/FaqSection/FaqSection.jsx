@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../App.css';
-import faqImage from '../assets/imageRoupa.png';
+import './FaqSection.module.css';
+import faqImage from '../../assets/imageRoupa.png';
 
 const FaqSection = () => {
   const [activeQuestion, setActiveQuestion] = useState(null);
