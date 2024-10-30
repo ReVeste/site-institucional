@@ -25,6 +25,7 @@ const FaqSection = () => {
       <div className="faq-content">
         <div className="faq-questions">
           <h2>Perguntas Frequentes</h2>
+          <h4> Passe o mouse por cima!</h4>         
           <ul>
             {questions.map((item, index) => (
               <li

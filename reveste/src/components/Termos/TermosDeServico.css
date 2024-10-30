@@ -1,0 +1,47 @@
+.termos-container {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #121212;
+    padding-top: 70px; /* Adiciona um pouco de espaçamento ao redor */
+}
+
+.cabecalho {
+    margin-bottom: 40px; /* Ajusta a margem inferior para mais espaço */
+    text-align: center; /* Centraliza o título */
+}
+
+.conteudo-termos {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+h1, h2, h3 {
+    color: #fff;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.botao-voltar {
+    margin-top: 40px; /* Move o botão "Voltar" para baixo */
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 8px; /* Espaçamento entre a logo e o texto */
+    width: 24px; /* Defina a largura da logo conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}

@@ -12,7 +12,6 @@
     align-items: center;
     justify-content: flex-start;
     padding-left: 50px;
-    overflow: hidden;
 }
 
 .hero-content {
@@ -22,7 +21,6 @@
     color: white;
     max-width: 100%;
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
     padding-top: 100px;
 }
@@ -84,4 +82,8 @@
 
 .hero-content button:hover {
     background-color: #1e2b40;
+}
+
+.hero-content input.input-alert {
+    border-color: red;
 }

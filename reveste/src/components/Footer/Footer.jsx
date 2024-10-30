@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Footer.module.css';
 import logo from '../../assets/logo.png';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+  const [errorMessage, setErrorMessage] = useState('Digite seu e-mail aqui!');
+  const navigate = useNavigate();
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    if (errorMessage === 'Você precisa inserir seu e-mail!') {
+      setErrorMessage('Digite seu e-mail aqui!'); 
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!email) {
+      setErrorMessage('Você precisa inserir seu e-mail!');
+      return;
+    }
+    navigate('/cadastro', { state: { email } });
+  };
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -15,19 +36,20 @@ const Footer = () => {
             <a href="/">Sobre</a>
           </div>
           <div className="footer-section">
-            <h4>Termos de uso</h4>
-            <a href="/">Políticas de uso</a>
-            <a href="/">Privacidade</a>
-          </div>
-          <div className="footer-section">
-            <h4>Ajuda</h4>
-            <a href="/">Dúvidas frequentes</a>
+            <h4>Política</h4>
+            <a href="/termos-de-servico">Termos de Serviço</a>
           </div>
         </div>
         <div className="footer-subscribe">
-          <form>
-            <input type="email" placeholder="Digite seu e-mail aqui" />
-            <button type="button">Continuar</button>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="email"
+              placeholder={errorMessage}
+              value={email}
+              onFocus={() => setErrorMessage('')}
+              onChange={handleEmailChange}
+            />
+            <button type="submit">Continuar</button>
           </form>
           <a href="mailto:reveste@reveste.com">reveste@reveste.com</a>
         </div>
