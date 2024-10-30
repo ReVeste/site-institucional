@@ -20,7 +20,7 @@ const CadastroForm = () => {
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [firstName, setFirstName] = useState('');
+  const [setFirstName] = useState('');
   const [aceitouTermos, setAceitouTermos] = useState(false);
   const [erroTermos, setErroTermos] = useState('');
 
@@ -63,9 +63,9 @@ const CadastroForm = () => {
       return;
     }
 
-    const serviceID = 'service_lx7aohr'; 
-    const templateID = 'template_l6v390j'; 
-    const publicKey = 'VMQgnW8wc7Ow7oK3C'; 
+    const serviceID = process.env.REACT_APP_SERVICE_ID; 
+    const templateID = process.env.REACT_APP_TEMPLATE_ID; 
+    const publicKey = process.env.REACT_APP_PUBLIC_KEY;
 
     emailjs.send(serviceID, templateID, formData, publicKey)
       .then((response) => {
