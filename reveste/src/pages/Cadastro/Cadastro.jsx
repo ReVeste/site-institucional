@@ -20,7 +20,7 @@ const CadastroForm = () => {
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [setFirstName] = useState('');
+  const [firstName, setFirstName] = useState('');
   const [aceitouTermos, setAceitouTermos] = useState(false);
   const [erroTermos, setErroTermos] = useState('');
 
