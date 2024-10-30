@@ -51,7 +51,7 @@ const Footer = () => {
             />
             <button type="submit">Continuar</button>
           </form>
-          <a href="mailto:reveste@reveste.com">reveste@reveste.com</a>
+          <a href="mailto:reveste@reveste.com">REVESTE.tech@outlook.com</a>
         </div>
       </div>
       <div className="footer-bottom">

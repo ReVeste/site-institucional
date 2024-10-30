@@ -81,18 +81,31 @@ const CadastroForm = () => {
     if (isSubmitted) {
       const timer = setTimeout(() => {
         navigate('/');
-      }, 3000);
+      }, 2000); 
       return () => clearTimeout(timer);
     }
   }, [isSubmitted, navigate]);
-
+  
   if (isSubmitted) {
     return (
       <div className={styles.container}>
-        {/* Conteúdo de sucesso */}
+        <div className={styles['lado-esquerdo']}>
+          <div className={styles['container-centralizador']}>
+            <div className={styles['secao-texto-reveste']}>
+              <img src={reveste} className={styles.reveste} alt="ReVeste Logo" />
+              <span className={styles.subtitulo}>Tecnologia que valoriza cada peça</span>
+            </div>
+            <h1>Obrigado pelo seu cadastro, {firstName}!</h1>
+            <p>Aguarde e entraremos em contatos!</p>
+          </div>
+        </div>
+        <div className={styles['imagem-background']}>
+          <img src={imagemBackground} className={styles.image} alt="Mulher sorrindo trabalhando" />
+        </div>
       </div>
     );
   }
+  
 
   return (
     <div className={styles.container}>
